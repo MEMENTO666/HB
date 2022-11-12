@@ -11,7 +11,7 @@
       rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/menu.css"/>
-    <link rel="stylesheet" href="css/intro.css"/>
+    <link rel="stylesheet" href="css/banner.css"/>
     <link rel="stylesheet" href="css/newitem.css"/>
     <link rel="stylesheet" href="css/lookbook.css"/>
     <title>I Am Not A Human Being</title>
@@ -41,7 +41,25 @@
           </ul>
         </div>
       </div>
-      <div id="intro"></div>
+
+      <!-- 배너 부분은 banner.js에서 처리 -->
+      <div id="banner">
+        <div id="contentContainer">
+          <div id="textArea">
+            "I AM NOT A HUMANBEING"<br>
+            <br>
+            인간이란 무엇인가<br>
+            <br>
+            In 2015, "I AM NOT A HUMANBEING"
+          </div>
+          <div id="paginator">
+            <div id="pageIndicator"></div>
+            <div id="pageController"></div>
+          </div>
+        </div>
+        <div id="backImageContainer"><img id="backImage" src="./image/slide2.jpg"/></div>
+        <div id="frontImageContainer"><img id="frontImage" src="./image/slide1.jpg"/></div>
+      </div>
 
       <div id="newitem">
         <div class="category_text">
@@ -167,5 +185,8 @@
         </section>
       </div>
     </div>
+
+    <script src="js/root.js" type="module"></script>
+    
   </body>
 </html>

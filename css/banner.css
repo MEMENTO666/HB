@@ -1,0 +1,88 @@
+#banner {
+  width: 100vw;
+  height: 80vh;
+  border: 1px solid black;
+  background-color: rgb(9, 9, 46);
+  display: flex;
+  flex-direction: row;
+}
+
+/* 
+<div id="banner">
+  <div id="contentContainer">
+    <div id="textArea">이곳은 텍스트 영역</div>
+    <div id="paginator">
+      <div id="pageIndicator"></div>
+      <div id="pageController"></div>
+    </div>
+  </div> 
+</div>
+*/
+
+#contentContainer {
+  width: 65%;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10%;
+  padding-top: 30%;
+}
+
+#textArea {
+  width: 100%;
+  height: 85%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#paginator {
+  width: 100%;
+  height: 15%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#pageIndicator {
+  width: 40%;
+  height: 100%;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#pageController {
+  width: 30%;
+  height: 100%;
+  background-color : black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#frontImageContainer {
+  width: 30%;
+  height: 60%;
+  background-color: blue;
+  z-index: 100;
+  position: absolute;
+  right: 30%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+#backImageContainer {
+  height: 100%;
+  width: 30%;
+  background-color: #AA00AA;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
