@@ -1,6 +1,15 @@
 body {
   margin: 0; padding: 0; box-sizing: border-box;
   overflow-x: hidden;
-  background-color: darkgray;
-  height: 600vh;
+  /* background-color: darkgray; */
+}
+
+#container {
+  width: 100vw;
+  /* height: 600vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-family: 'Lato', sans-serif;
 }

@@ -1,6 +1,6 @@
 #intro {
   width: 100vw;
-  height:100vh;
-  background-color: darkgray;
+  height:50vh;
   border: 1px solid black;
+  background-color: rgb(9, 9, 46);
 }

@@ -1,0 +1,104 @@
+#lookbook {
+  width: 100vw;
+  height: 100vh;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+#slider {
+  height: 100%;
+  width:100%;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#slider label {
+  width: 400px;
+  height: 600px;
+  border-radius: 4px;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+
+}
+
+#slider label > p {
+  position: absolute;
+  top: 430px;
+  font-size: 16px;
+  color: white;
+  text-shadow: 2px 1px 5px black;
+}
+
+.viewtext {
+  width: 180px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 220px;
+  border: 1px solid white;
+  color: white;
+}
+
+
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-90%,0,-300px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-50%,0,-200px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(50%,0,-200px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(90%,0,-300px);
+}
+
+#slide1 { background:url(../image/lookbook10.jpg) }
+#slide2 { background:url(../image/lookbook6.jpg) }
+#slide3 { background:url(../image/lookbook5.jpg) }
+#slide4 { background:url(../image/lookbook9.jpg) }
+#slide5 { background:url(../image/lookbook7.jpg) }
+
+[type=radio] {
+  display: none;
+}

@@ -1,17 +1,13 @@
-#container {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-} 
-
 #header {
-  width:100vw;
+  width: 100vw;
   height: 160px;
-  /* position: fixed; */
+  position: fixed;
+  background-color: white;
+  z-index: 999999;
 }
 
 #logo {
-  height:50%;
+  height: 50%;
   /* border: 1px solid black; */
   display: flex;
   align-items: center;
@@ -19,10 +15,10 @@
 }
 
 #logo > div {
-  width:300px;
+  width: 300px;
   height: 90%;
   /* background-color: gray; */
-  background-image: url(../image/logo\ \(1\).png);
+  background-image:url(../image/logo\ \(1\).png);
   background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -58,21 +54,21 @@
   width: 40px;
 }
 
-.menu > ul>li:hover {
-  color: rgb(117, 114, 114);
+.menu > ul > li:hover {
+  color: rgb(153, 153, 153);
   transition: 0.3s ease-out;
-  font-size: 14.5px;
 }
 
 .menu > ul > li > ul {
   display: none;
   list-style: none;
   padding: 0;
-  width:90px;
-  font-size: 13px;
+  width: 90px;
+  font-size: 12px;
   line-height: 30px;
-  cursor:default;
-  /* border: 1px solid red; */
+  cursor: default;
+  background-color: white;
+  transition: 0.6s;
 }
 
 .menu > ul > li > ul > li {
@@ -93,9 +89,4 @@
 .menu > ul > li:hover > ul {
   display: flex;
   flex-direction: column;
-  transition: 0.5;
 }
-
-
-
-
