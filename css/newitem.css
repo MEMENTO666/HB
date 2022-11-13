@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
   transition: 0.5s;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .category_text {
@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .item_box {

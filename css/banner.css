@@ -1,10 +1,8 @@
 #banner {
   width: 100vw;
   height: 80vh;
-  border: 1px solid black;
-  background-color: rgb(9, 9, 46);
+  /* border: 1px solid black; */
   display: flex;
-  flex-direction: row;
 }
 
 /* 
@@ -20,69 +18,246 @@
 */
 
 #contentContainer {
-  width: 65%;
+  width: 100vw;
   background-color: yellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 10%;
-  padding-top: 30%;
+  /* padding-top: 30%; */
+  /* border: 1px solid red; */
+  align-items: center;
 }
 
 #textArea {
-  width: 100%;
-  height: 85%;
-  background-color: green;
+  width: 60vw;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 800;
+  position: relative;
+  top: 160px;
+  right: 350px;
+  color: white;
+  text-shadow: 2px 2px 2px rgb(73, 73, 73);
+  font-size: 40px;
+  line-height: 40px;
+  transition: 0.5s;
+  /* font-family: 'Kolker Brush', cursive; */
+  letter-spacing: 2px;
 }
 
 #paginator {
-  width: 100%;
-  height: 15%;
-  background-color: red;
+  width: 300px;
+  height: 40px;
+  /* background-color: red; */
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
+  position: relative;
+  top: 200px;
+  right: 350px;
+  z-index: 200;
+  transition: 0.5s;
 }
 
 #pageIndicator {
   width: 40%;
   height: 100%;
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 #pageController {
-  width: 30%;
-  height: 100%;
-  background-color : black;
+  width: 100px;
+  height: 40px;
+  /* background-color : black; */
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+}
+
+#pageController > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid white; */
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#pageController > div:nth-child(1) {
+  background-image: url(../image/arrow.png);
+  transform: rotate(180deg);
+}
+
+#pageController > div:nth-child(2) {
+  background-image: url(../image/arrow.png);
+}
+
+#pageController > div:nth-child(3) {
+  background-image: url(../image/pause.png);
 }
 
 #frontImageContainer {
-  width: 30%;
-  height: 60%;
-  background-color: blue;
   z-index: 100;
   position: absolute;
-  right: 30%;
   background-position: center;
   background-size: cover;
+  right: 370px;
+  top: 190px;
   display: flex;
+  transition: 0.5s;
+}
+
+#frontImage {
+  width: 500px;
+  height: 350px;
+  transition: 0.5s;
 }
 
 #backImageContainer {
-  height: 100%;
-  width: 30%;
-  background-color: #AA00AA;
+  width: 500px;
+  height: 350px;
+  position: absolute;
+  right: 50px;
   background-position: center;
-  background-size: cover;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  top: 350px;
+  transition: 0.5s;
+}
+
+#backImage {
+  width: 500px;
+  height: 100%;
+  transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1100px) {
+  #textArea {
+    width: 60vw;
+    height: 200px;
+    top: 160px;
+    right: 200px;
+    color: white;
+    font-size: 40px;
+    transition: 0.5s;
+  }
+  #paginator {
+    width: 300px;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 200px;
+    right: 200px;
+    z-index: 200;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #frontImageContainer {
+    z-index: 100;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    right: 200px;
+    top: 160px;
+    display: flex;
+    transition: 0.5s;
+  }
+  #backImageContainer {
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    right: 0px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    top: 384px;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  #textArea {
+    width: 80vw;
+    height: 500px;
+    top: 160px;
+    right: 0px;
+    color: white;
+    transition: 0.5s;
+    line-height: 35px;
+  }
+  #paginator {
+    width: 300px;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 200px;
+    right: 0px;
+    z-index: 200;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  #banner {
+    height: 60vh;
+  }
+  #frontImageContainer {
+    z-index: 100;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    right: 0px;
+    top: 160px;
+    display: flex;
+    transition: 0.5s;
+    /* border: 1px solid black; */
+  }
+
+  #frontImage {
+    height: 44.8vh;
+    transition: 0.5s;
+  }
+  #backImageContainer {
+    display: none;
+    transition: 0.5s;
+  }
+
+  #textArea {
+    display: none;
+    transition: 0.5s;
+  }
+
+  #paginator {
+    width: 300px;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    position: relative;
+    top: 280px;
+    z-index: 200;
+    transition: 0.5s;
+  }
+  #contentContainer {
+    height: 55vh;
+    /* border: 1px solid; */
+  
+}
 }
