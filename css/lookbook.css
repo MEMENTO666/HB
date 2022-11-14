@@ -119,3 +119,43 @@
 [type="radio"] {
   display: none;
 }
+
+@media screen and (max-width:768px) {
+  #slider label {
+    width: 250px;
+    height: 500px;
+    border-radius: 4px;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+  }
+  #slider label > p {
+    position: absolute;
+    top: 380px;
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 1px 5px black;
+    text-align: center;
+  }
+  
+  .viewtext {
+    width: 130px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 220px;
+    border: 1px solid white;
+    color: white;
+    font-size: 13px;
+  }
+  
+  
+}

@@ -1,0 +1,10 @@
+#VIEWMORE {
+  width: 150px;
+  height:40px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 80px;
+}

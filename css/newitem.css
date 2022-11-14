@@ -46,6 +46,8 @@
 
 .item_contents > img {
   transition: 0.6s;
+  cursor: pointer;
+
 }
 
 .item_contents > img:hover {
