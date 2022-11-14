@@ -11,12 +11,12 @@ const bannerImages = [
 
 const backgroundColors = 
 ["#2D3A47", 
-"#1D5F1C", 
+"#40763F", 
 "#162222", 
-"#586959", 
+"#3B453C", 
 "#B11B41",
-"#888E6B",
-"#BFBEBA",
+"#47501E",
+"#9C0103",
 
 ];
 
