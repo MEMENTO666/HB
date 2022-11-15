@@ -3,19 +3,19 @@ const bannerImages = [
   "../image/banner2.jpg",
   "../image/banner3.jpg",
   "../image/banner4.jpg",
-  "../image/banner5.jpg",
   "../image/banner6.jpg",
+  "../image/banner5.jpg",
   "../image/banner7.jpg",
   // add here
 ];
 
 const backgroundColors = 
-["#2D3A47", 
-"#40763F", 
-"#162222", 
-"#3B453C", 
+["#34454D", 
+"#006345", 
+"#092D00", 
+"#151515", 
+"#000000",
 "#B11B41",
-"#47501E",
 "#9C0103",
 
 ];
@@ -30,8 +30,8 @@ let currentImageIndex = 0;
 let currentBackColorIndex = 0;
 const IMAGE_INDEX_MAX = bannerImages.length - 1;
 const BACKCOLOR_INDEX_MAX = backgroundColors.length - 1;
-const normalIndicatorColor = "#E0E0E0";
-const hightlightIndicatorColor = "crimson";
+const normalIndicatorColor = "#A6A6A6";
+const hightlightIndicatorColor = "white";
 
 const createDot = (size) => {
   const dot = document.createElement("div");

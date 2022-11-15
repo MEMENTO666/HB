@@ -6,6 +6,11 @@
   margin-top: 160px;
 }
 
+@font-face {
+  font-family:"helvetica";
+  src: url(../font/Helvetica.ttf);
+}
+
 /* 
 <div id="banner">
   <div id="contentContainer">
@@ -30,7 +35,7 @@
 }
 
 #textArea {
-  width: 600px;
+  width: 660px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -40,17 +45,23 @@
   position: relative;
   top: 160px;
   left: 60px;
-  color: white;
-  text-shadow: 2px 2px 2px rgb(73, 73, 73);
-  font-size: 40px;
+  color: rgba(255, 255, 255, 0.795);
+  /* text-shadow: 2px 2px 2px rgb(73, 73, 73); */
+  font-size: 45px;
   line-height: 40px;
   transition: 0.5s;
-  /* font-family: 'Kolker Brush', cursive; */
   letter-spacing: 2px;
+  font-family: "helvetica";
+  font-weight:bold;
+  font-style: italic;
+  
 }
 
 #textArea > p > span {
   font-size: 20px;
+  font-style: normal;
+  font-weight:400px;
+
 }
 
 #paginator {
@@ -112,7 +123,7 @@
   right: 370px;
   /* display: flex; */
   transition: 0.5s;
-  bottom: 330px;
+  bottom: 350px;
 }
 
 #frontImage {
@@ -144,18 +155,14 @@
 
 @media screen  and (max-width:890px) {
   #textArea {
-    width: 400px;
-    font-size: 25px;
-  }
-  #textArea > p > span {
-    font-size: 16px;
+    width: 700px;
   }
 }
 
 @media screen and (max-width:768px) {
   #banner {
-    width: 100vw;
-    height: 45vh;
+    width: 800px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,8 +170,8 @@
   }
 
   #contentContainer {
-    width: 100vw;
-    height: 45vh;
+    width: 800px;
+    height: 500px;
     flex-direction: column;
     display: flex;
     justify-content:flex-end;
@@ -174,8 +181,8 @@
   }
 
   #frontImageContainer {
-    width: 100vw;
-    height:45vh;
+    width: 800px;
+    height:500px;
     z-index: 100;
     position: absolute;
     background-position: center;
@@ -194,10 +201,12 @@
   #backImageContainer {
     display: none;
   }
-  
+
   #textArea {
    display: none;
+    
   }
+  
 
   #paginator {
     width: 250px;

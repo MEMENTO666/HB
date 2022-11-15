@@ -10,3 +10,12 @@ VIEWMORE.addEventListener("click",()=>{
   itemcontents4.style.display = "flex";
   itemcontents5.style.display = "flex";
 })
+
+const VIEWMORE2 = document.getElementById("VIEWMORE2");
+
+const NEWITEM2 = document.getElementById("newitem2");
+
+
+VIEWMORE2.addEventListener("click",()=>{
+  NEWITEM2.style.display = "flex";
+})
